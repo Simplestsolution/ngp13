@@ -179,10 +179,10 @@ position:absolute;
 
 .container2{
 margin: 2% auto;
-    width: 218;
+    width: 218px;
     height: 170px;
     position: relative;
-    perspective: 2000px;
+    perspective: 250px;
 	margin-bottom: 10px;
 }
 
