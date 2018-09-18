@@ -1,0 +1,242 @@
+body
+{
+//mardin:0;
+background-color:powderblue;
+//background-image:url("pexels-photo-256355.jpeg");
+}
+.navbar{
+overflow:hidden;
+background-color:#fff;
+position:scroll;
+//top:0;
+width:100%;
+}
+.navbar a{
+float:left;
+display:block;
+color:#0000ff;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+font-size:17px;
+}
+.navbar a:hover{
+background:#00FF00;
+color:black;
+text-transform:uppercase;
+}
+.read a:hover{
+color:black;
+text-transform:uppercase;
+text-decoration:none;
+background-color:#0000ff;
+}
+.read a:active{
+color:black;
+text-transform:uppercase;
+text-decoration:none;
+}
+.read a{
+text-decoration:none;
+color:black;
+}
+}
+#orang{
+background-color:#FF6347;
+}
+
+#foot{
+background-color:0000AA;
+}
+
+
+
+.shake {
+display:inline-block;
+}
+.shake {
+display:block;
+position:relative;
+}
+.shake,.shake.inline{
+display:inline-block;
+}
+@-webkit-keyframes textshake {
+0% {-webkit-transform:translate(2px,1px)
+rotate(0deg); }
+10% {-webkit-transform:translate(-1px,-2px)
+rotate(-1deg); }
+20% {-webkit-transform:translate(-3px,0px)
+rotate(1deg); }
+30% {-webkit-transform:translate(0px,2px)
+rotate(0deg); }
+40% {-webkit-transform:translate(1px,-1px)
+rotate(1deg); }
+50% {-webkit-transform:translate(-1px,2px)
+rotate(-1deg); }
+60% {-webkit-transform:translate(-3px,1px)
+rotate(0deg); }
+70% {-webkit-transform:translate(2px,1px)
+rotate(-1deg); }
+80% {-webkit-transform:translate(-1px,-1px)
+rotate(1deg); }
+90% {-webkit-transform:translate(2px,2px)
+rotate(0deg); }
+100% {-webkit-transform:translate(1px,-2px)
+rotate(-1deg); }
+}
+.shake:hover,.shake:focus {
+-webkit-animation-name:textshake;
+-webkit-animation-duration: 0.9s;
+-webkit-animation-origin:50% 50%;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+}
+.shake a:hover{
+color:black;
+text-transform:uppercase;
+text-decoration:none;
+background-color:pink;
+}
+.shake a:active{
+color:black;
+text-transform:uppercase;
+text-decoration:none;
+}
+.shake a{
+text-decoration:none;
+color:black;
+}
+.sideenav {
+height:100%;
+width:0;
+position:fixed;
+//z-index:1;
+top:0;
+left:0;
+background-color:#fff;
+overflow-x:hidden;
+transition:0.5s;
+padding-top:60px;
+}
+.sideenav a {
+padding:8px 8px 8px 32px;
+text-decoration:none;
+font-size:25px;
+display:block;
+transition:0.3s;
+}
+.sideenav a:hover{
+color:#f1f1f1;
+}
+.sideenav .closebtn {
+position:absolute;
+top:0;
+right:25px;
+font-size:36px;
+margin-left:50px;
+}
+*{
+margin:0px;
+paddig:0px;
+}
+#container ul{
+list-style:none;
+}
+#container ul li{
+background-color:#476b6b;
+-webkit-transition: all .5s;
+border-radius: 25px;
+width:150px;
+border:1px solid blue;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:18px;
+position:relative;
+box-shadow: 1px 1px 5px rgba(0,0,0,.5),
+0px 0px 0px 1px rgba(0,0,0,.1);
+}
+#container ul li:hover{
+background-color:#0000ff;
+z-index:2;
+}
+#container ul ul{
+display:none;
+}
+#container ul li:hover>ul{
+display:block;
+z-index:2;
+}
+#container ul ul ul{
+margin-left:100px;
+top:0px;
+position:absolute;
+}
+/*image slide */
+
+.container2{
+margin: 2% auto;
+    width: 218;
+    height: 170px;
+    position: relative;
+    perspective: 250px;
+	margin-bottom: 10px;
+}
+
+
+
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: rotation 15s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 70%px;
+	left: 10px;
+	
+        top:10px;
+	background: black;
+	overflow: hidden;
+	border: solid 2px blue;
+}
+
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+#carousel img{
+	cursor: pointer;
+	transition: all .5s ease;
+ }
+#carousel img:hover{
+  transform: scale(1.4,1.4);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}	
+}
+
+
+
