@@ -182,7 +182,7 @@ margin: 2% auto;
     width: 218;
     height: 170px;
     position: relative;
-    perspective: 250px;
+    perspective: 2000px;
 	margin-bottom: 10px;
 }
 
